@@ -27,7 +27,12 @@
       </li>
 
       <li><a href="#">Portfolio</a></li>
-      <li><a href="#">How it works?</a></li>
+      <li>
+        <a href="#">How it works?</a>
+        <ul>
+          <li><%= link_to "Our Development Process",  :controller => "development_process" %></li>
+        </ul>
+      </li>
       <li>
         <a href="#">SEO</a>
         <ul>
@@ -61,8 +66,8 @@
       <li>
         <a href="#">WEB SOLUTIONS</a>
           <ul>
-            <li><a href="#">Packages Overview</a></li>
-            <li><a href="#">Small Business Pack</a></li>
+            <li><%= link_to "Web Packages Overview",  :controller => "web_pack_overview" %></a></li> 
+            <li><%= link_to "Small Business Pack",  :controller => "small_business_pack" %></li>
             <li><a href="#">Mid-Sized Company Pack</a></li>
             <li><a href="#">Growing Company Pack</a></li>
             <li><a href="#">e-Commerce Pack</a></li>

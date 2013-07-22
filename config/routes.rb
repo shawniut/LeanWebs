@@ -1,8 +1,9 @@
 LeanWebs::Application.routes.draw do
+  get "web_pack_overview/index"
   get "development_process/index"
   get "home/index"
 
-  resources  :small_business_pack, :development_process
+  resources  :small_business_pack, :development_process, :web_pack_overview
 
    root to: "home#index"
 
