@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LeanWebs</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <title>SampleApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+ 
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="root">
+   <div id="wrapper">
+   <div  id = "header">
+    
+      <%= image_tag('logo.svg', :height => 70, :class => 'logo') %>
+  
+   
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
 
-<%= yield %>
+</div>
+<div id="nav-bar">
+  <ul id="menu">
+      
+      <li>
+        <a href="#">About</a>
+      </li>
 
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">How it works?</a></li>
+      <li>
+        <a href="#">SEO</a>
+        <ul>
+          <li><a href="#">Services Overview</a></li>
+          <li><a href="#">Keyword Research</a></li>
+          <li><a href="#">Search Media Marketing(SEM)</a></li>
+          <li><a href="#">Back Linking and Bookmarking</a></li>
+          <li><a href="#">Tagging</a></li>
+          <li><a href="#">Directory and Blog Submission</a></li>
+        </ul>
+      <li>
+      <li>
+        <a href="#">Sales and Marketing</a>
+        <ul>
+          <li><a href="#">Services Overview</a></li>
+          <li><a href="#">Social Media Marketing (SMM)</a></li>
+          <li><a href="#">Email Marketing</a></li>
+          <li><a href="#">Sales and Lead Generation</a></li>
+          <li><a href="#">Market Research and Surveys</a></li>
+          <li><a href="#">Product Marketing and Uploading</a></li>
+        </ul>
+      <li>
+        <a href="#">Graphics design</a>
+        <ul>
+          <li><a href="#">Services Overview</a></li>
+          <li><a href="#">Logo & Banner design</a> <li>
+          <li><a href="#">Image editing</a></li>
+          <li><a href="#">PHD to HTML</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">WEB SOLUTIONS</a>
+          <ul>
+            <li><a href="#">Packages Overview</a></li>
+            <li><a href="#">Small Business Pack</a></li>
+            <li><a href="#">Mid-Sized Company Pack</a></li>
+            <li><a href="#">Growing Company Pack</a></li>
+            <li><a href="#">e-Commerce Pack</a></li>
+          </ul>
+      </li>
+      <li><a href="#">Home</a></li>
+    </ul>
+</div>
+<div id="body">
+    <%= yield %>
+</div>
+<footer>
+      <div id= "footer">
+        <div id = "footer_text">
+          © 2013 CompanyName Bangladesh. All rights reserved.
+       
+      </div>
+    </div>
+<footer>
+</div>
 </body>
 </html>

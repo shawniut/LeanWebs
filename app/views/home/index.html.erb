@@ -1,0 +1,125 @@
+
+<br>
+<div id= "top-container">
+	<div id="left-slider">
+		<%= image_tag('banner.jpg', :height => 330, :width=>745) %>
+	</div>
+	<div id="qoute-form">
+		<p id="quote-text-line1">Request a Free Quote!</p>
+		
+		<div id= "form">
+			<%= form_for :post do |f| %>
+	  			<p>
+	    			<%= f.label :name %>:<br>
+	    			<%= f.text_field :name %>
+	  			</p>
+	  			<p>
+	    			<%= f.label :phone %>:<br>
+	    			<%= f.text_field :phone %>
+	  			</p>
+	  			<p>
+	    			<%= f.label :email %>:<br>
+	    			<%= f.text_field :eamil %>
+	  			</p>
+	  			<p>
+	    			<%= f.label :note %>:<br>
+	    			<%= f.text_area :note, :cols=>"24", :rows => "2" %>
+	  			</p>
+	 
+	  			<div class="buttonHolder">
+		    		<%= f.submit :Submit, :class => "myButton"%>
+		  		</div>
+		  			
+		  		
+			<% end %>
+		</div>	
+	</div>
+</div>
+
+<div id = "middle-container">
+	<div class = "service">
+		
+			<div class = "service_name">
+				<a>WEB SOLUTIONS</a>
+			</div>
+			<div class = "service_icon">
+				<%= image_tag('web.png', :height => 70) %>
+			</div>
+			<div class = "service_desc">
+				<ul>
+					<li>Word processing;</li>
+					<li>Data entry;</li>
+					<li>Data mining;</li>
+					<li>Live support;</li>
+					</ul>
+
+				<div class="buttonHolder">
+		    		<a class = "myButton">Packages Overview</a>
+		  		</div>
+			</div>
+		
+	</div>
+	<div id = "service-container">
+	<div class = "service_left">
+			<div class = "service_name">
+				<a>SEO FOR SMALL BUSINESS</a>
+			</div>
+			<div class = "service_icon">
+				<%= image_tag('seo.png', :height => 75) %>
+			</div>
+			<div class = "service_desc">
+				<ul>
+					<li>WordPress Development;</li>
+					<li>Joomla Development;</li>
+					<li>Ecommerce Development;</li>
+					<li>Html 5 Development;</li>
+				</ul>
+
+				<div class="buttonHolder">
+		    		<a class = "myButton">Services Overview</a>
+		  		</div>
+			</div>
+	</div>
+	<div class = "service_left">
+		<div class = "service_name">
+				<a>GRAPHICS DESIGN</a>
+			</div>
+			<div class = "service_icon">
+				<%= image_tag('graphics.png', :height => 75) %>
+			</div>
+			<div class = "service_desc">
+				<ul>
+					<li>On Site SEO;</li>
+					<li>Custom Blog writing;</li>
+					<li>Monthly Link Buiding;</li>
+					<li>Rank Tracking Reporting;</li>
+				</ul>
+
+				<div class="buttonHolder">
+		    		<a class = "myButton">Services Overview</a>
+		  		</div>
+			</div>
+	</div>
+	<div class = "service_left">
+		<div class = "service_name">
+				<a>SALES AND MARKETING</a>
+			</div>
+			<div class = "service_icon">
+				<%= image_tag('marketing.png', :height => 70) %>
+			</div>
+			<div class = "service_desc">
+				<ul>
+					<li>Logo Design;</li>
+					<li>Banner Design;</li>
+					<li>Image Editing</li>
+					<li>PSD to HTML;</li>
+				</ul>
+
+				<div class="buttonHolder">
+		    		<a class = "myButton">Services Overview</a>
+		  		</div>
+			</div>
+	</div>
+	</div>
+</div>
+	

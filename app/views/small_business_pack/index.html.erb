@@ -1,0 +1,85 @@
+<div class="package-header">
+  <p >Small Business Pack ( Start with $600)</p>
+</div>
+<div class="package-for">
+	<div class="package-for-text">
+		<p class = "title">This package is right for your if… </p>
+		  <ul>
+			<li>You are a small company.</li>
+			<li>You need a professional web presence with an established look.</li>
+			<li>You want to get that presence quickly, easily – and affordable</li>
+		  </ul>
+	 
+	</div>
+	<div class = "package-for-image">
+		<%= image_tag('small_business.jpg', :height => 100, :width =>240) %>
+	</div>
+</div>
+
+<div class="pack-desc-container", id = "pack-desc">
+	<div class = "left-div">
+		<div class = "title">
+			Features
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Photo gallery</li>
+			<li class = "leaf">Custom contact us form</li>
+			<li class = "leaf">Custom logo, banner and footer design</li>
+			<li class = "leaf">Location in Google Map</li>
+		  </ul>
+		</div>
+	</div>
+	<div class = "middle-div">
+		<div class = "title">
+			Website Size and Pages
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Website size: 1-10 pages</li>
+			<li class = "leaf">Example pages: About Us, Products/Services, Contact Us, Offices,The Engagement Process, Join Us, News & Resources,
+							   Our Clients, Privacy Policy & Disclaimers.</li>
+		  </ul>
+		</div>
+	</div>
+	<div class = "right-div">
+		<div class = "title">
+			Search Engine Promotion
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Integration of Keywords</li>
+			<li class = "leaf">Search Engine Optimization Guidelines</li>
+			<li class = "leaf">Search Engine Primer</li>
+		  </ul>
+		</div>
+	</div>
+</div>
+<div class = "let-us-know-title">
+<p>Let us know your requirement-Its Free!</p>
+</div>
+<div class="requirement-form">
+	<%= form_for :post do |f| %>
+	  	<p>
+	    	<%= f.label :name %>:<br>
+	    	<%= f.text_field :name %>
+	  	</p>
+	  	<p>
+	    	<%= f.label :phone %>:<br>
+	    	<%= f.text_field :phone %>
+	  	</p>
+	  	<p>
+			<%= f.label :email %>:<br>
+			<%= f.text_field :eamil %>
+	  	</p>
+	  	<p>
+			<%= f.label :requirements %>:<br>
+			<%= f.text_area :requirements, :cols=>"100", :rows => "10" %>
+		</p>
+	 
+	  	<div class="submit-button-holder">
+		    <%= f.submit :"Submit Requirements", :class => "myButton"%>
+		</div>	
+	<% end %>
+<div>
+

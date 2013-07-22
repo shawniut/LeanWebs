@@ -1,0 +1,134 @@
+// Place all the styles related to the smallBusinessPack controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.package-header{
+  
+  border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #E5E4E2;
+  margin-left:20px;
+  height:50px;
+  margin-bottom:10px;
+  margin-right:20px;
+	//font-weight:bold;
+  font-size:20px;
+  color:#4c4c4c;
+  font-family: 'tahoma';
+}
+
+.package-for{
+  
+  //border-bottom-style: solid;
+	//border-bottom-width: 1px;
+	//border-bottom-color: #E5E4E2;
+  //margin-left:20px;
+  height:100px;
+  margin-bottom:10px;
+  margin-right:20px;
+	//font-weight:bold;
+  font-size:13px;
+  color:#4c4c4c;
+  font-family: 'tahoma';
+}
+.package-for-text{
+ float:left; 
+ width:70%;
+ backround-color: #999;
+ height:100px;
+ margin-left:20px;
+}
+.package-image{
+  float:left;
+  width:30%;
+  //text-align:right;
+  background-color:#999;
+  //height: 100px;
+}
+
+.title{
+  //height:20px;
+  margin-top:15px;
+  margin-right:20px;
+  //margin-left:20px;
+  color:#4c4c4c;
+  //padding-left:10px;
+  font-weight:bold;
+  font-size:15px; 
+}
+
+.pack-desc-container{
+	margin-top:15px;
+	margin-left:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	height: 200px;
+	border-top:1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.left-div{
+	//position:relative;
+	float:left;
+	width:32%;
+	height:100%;
+	//background-color: #d2d2d2;
+	border-right:1px solid #d2d2d2;
+}
+.middle-div{
+	padding-left:20px;
+	padding-right:5px;
+	float:left;
+	width:31%;
+	height:100%;
+	//border-right:1px solid #d2d2d2;
+}
+.right-div{
+	padding-left:20px;
+	padding-right:5px;
+	float:left;
+	width:31%;
+	height:100%;
+	border-left:1px solid #d2d2d2;
+}
+.text-font{
+  //font-size:14px;
+  color:#4c4c4c;
+  font-family: 'tahoma';
+}
+
+.pack-ul{
+	margin-left:0px;
+	padding-left:0px;
+}
+
+.leaf {
+  //height: 25px;
+  margin: 10px 0;
+  background: url('feature.png') no-repeat left center;
+  list-style: none;
+  padding-left: 25px;
+  background-position: 0 .2em;
+}
+
+.let-us-know-title{
+  //height:20px;
+  margin-top:15px;
+  margin-right:20px;
+  margin-left:20px;
+  color:#4c4c4c;
+  //padding-left:10px;
+  font-weight:bold;
+  font-size:15px; 
+}
+
+.requirement-form{
+	margin-left:20px;
+}
+.submit-button-holder{
+text-align: left;
+}
+
+
+
+
