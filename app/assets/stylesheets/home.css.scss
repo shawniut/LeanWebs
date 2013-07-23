@@ -4,14 +4,44 @@
 
 
 #top-container{
-	height: 330px;
-	border: 2px;
+	height: 270px;
+	width: 100%;
 }
 
-#left-slider{
+.slideshow-container{
+ 	float: left;
+ 	height: 100%;
+  	width: 59%;
+  //background-color: #ccc;
+  //border: 1px solid #999;
+}
+
+
+#slideshow { 
+    //margin: 50px auto; 
+   
+    position: relative; 
+    height: 270px; 
+    //padding: 10px; 
+    //box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    
+
+}
+
+#slideshow > div { 
+    position: absolute; 
+    border: 5px, solid #999;
+    //top: 10px; 
+    //left: 10px; 
+    //right: 10px; 
+    //bottom: 10px; 
+}
+
+#left-panel{
+	
 	float: left;
 	height: 100%;
-	width: 74%;
+	width: 40%;
 	
 	//border-style: solid;
 	//border-radius: 10px;
@@ -19,21 +49,26 @@
 	//border-color: #999;
 	//background-color: #D1D0CE;
 }
-#qoute-form{
-	margin-left: 0.5%;
-	float:left;
-	height: 100%;
-	width: 24%;
 
-	border-radius: 10px;
-	border-color: #999;
-	border-style: solid;
-	border-width: 2px;
-	background-color: #D1D0CE;
-	color: #2C3539;
-	text-align: center;
-
+#first-mission {
+	//text-shadow: 1px 1px 0px #FFFFFF, 0 -1px 0 #000000;
+	font-size: 30px;
+	color: #5C5B5B;
+	//line-height: 26px;
+	margin-top: 10px;
+	margin-left: 20px;
+	//display: block;
+	//text-align: center;
 }
+
+#second-mission {
+	color: #5C5B5B;
+	font-size: 16px;
+	//margin-top: 10px;
+	margin-left: 20px;
+	//text-align: center;
+}
+
 
 #quote-text-line1{
 	font-size: 16px;
