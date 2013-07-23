@@ -1,4 +1,7 @@
 LeanWebs::Application.routes.draw do
+  get "e_commerce_pack/index"
+  get "mid_sized_company_pack/index"
+  get "growing_company_pack/index"
   get "web_pack_overview/index"
   get "development_process/index"
   get "home/index"

@@ -68,9 +68,10 @@
           <ul>
             <li><%= link_to "Web Packages Overview",  :controller => "web_pack_overview" %></a></li> 
             <li><%= link_to "Small Business Pack",  :controller => "small_business_pack" %></li>
-            <li><a href="#">Mid-Sized Company Pack</a></li>
-            <li><a href="#">Growing Company Pack</a></li>
-            <li><a href="#">e-Commerce Pack</a></li>
+            <li><%= link_to "Mid-Sized Company Pack",  :controller => "mid_sized_company_pack" %></li>
+            <li><%= link_to "Growing Company Pack",  :controller => "growing_company_pack" %></li>
+            <li><%= link_to "e-Commerce Pack",  :controller => "e_commerce_pack" %></li>
+            
           </ul>
       </li>
       <li><a href="#">Home</a></li>
@@ -79,6 +80,7 @@
 <div id="body">
     <%= yield %>
 </div>
+<!--
 <footer>
       <div id= "footer">
         <div id = "footer_text">
@@ -87,6 +89,7 @@
       </div>
     </div>
 <footer>
+-->
 </div>
 </body>
 </html>

@@ -1,0 +1,84 @@
+<div class="page-header">
+  <p >E-Commerce Pack ( Start with $1500)</p>
+</div>
+<div class="package-for">
+	<div class="package-for-text">
+		<p class = "title">This package is right for your if… </p>
+		  <ul>
+			<li>You are planning to receive online order from customer.</li>
+			<li>You are planning to sell your product online.</li>
+		  </ul>
+	 
+	</div>
+	<div class = "package-for-image">
+		<%= image_tag('e-commerce_site.jpg', :height => 100, :width =>240) %>
+	</div>
+</div>
+
+<div class="pack-desc-container", id = "pack-desc">
+	<div class = "left-div">
+		<div class = "title">
+			Features
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Product Catalog</li>
+			<li class = "leaf">Stock management</li>
+			<li class = "leaf">Shopping Cart & Checkout</li>
+			<li class = "leaf">Online Payment Gateway Integration</li>
+		  </ul>
+		</div>
+	</div>
+	<div class = "middle-div">
+		<div class = "title">
+			Website Size and Pages
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Website size: Up to 50 pages</li>
+			<li class = "leaf">Web page name examples: About Us, Products/Services, Contact Us, Offices,Make Payment, Join Us, News & Resources,
+								Our Clients, Privacy Policy & Disclaimers.</li>
+		  </ul>
+		</div>
+	</div>
+	<div class = "right-div">
+		<div class = "title">
+			Search Engine Promotion
+		</div>
+		<div class="text-font">
+		  <ul class = "pack-ul">
+			<li class = "leaf">Integration of Keywords</li>
+			<li class = "leaf">Search Engine Optimization Guidelines</li>
+			<li class = "leaf">Search Engine Primer</li>
+		  </ul>
+		</div>
+	</div>
+</div>
+<div class = "let-us-know-title">
+<p>Let us know your requirement-Its Free!</p>
+</div>
+<div class="requirement-form">
+	<%= form_for :post do |f| %>
+	  	<p>
+	    	<%= f.label :name %>:<br>
+	    	<%= f.text_field :name %>
+	  	</p>
+	  	<p>
+	    	<%= f.label :phone %>:<br>
+	    	<%= f.text_field :phone %>
+	  	</p>
+	  	<p>
+			<%= f.label :email %>:<br>
+			<%= f.text_field :eamil %>
+	  	</p>
+	  	<p>
+			<%= f.label :requirements %>:<br>
+			<%= f.text_area :requirements, :cols=>"100", :rows => "10" %>
+		</p>
+	 
+	  	<div class="submit-button-holder">
+		    <%= f.submit :"Submit Requirements", :class => "myButton"%>
+		</div>	
+	<% end %>
+<div>
+

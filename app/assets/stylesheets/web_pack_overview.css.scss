@@ -1,3 +1,70 @@
 // Place all the styles related to the web_pack_overview controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pack-overview-container{
+	height: 550px;
+	margin-top:15px;
+	margin-left:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+}
+
+.pack-container{
+	float: left;
+	width:22.7%;
+	height: 520px;
+	border:1px solid #d2d2d2;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin:10px;
+}
+
+
+.pack-icon{
+	//height: 35%;
+	padding-top: 10px;
+	width: 100%;
+	border-bottom:1px solid #d2d2d2;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color:#4c4c4c;
+}
+
+.price-text{
+	font-weight: bold;
+	font-size:13px;
+}
+
+.feature-container{
+	height: 50%;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	padding-right:5px;
+	//border-bottom:1px solid #d2d2d2;
+}
+
+
+.feature-ul{
+	margin-left:10px;
+	margin-top: 30px;
+	padding-left:0px;
+}
+
+.feature-bullet {
+  //height: 15px;
+  margin: 10px 0;
+  background: url('feature.png') no-repeat left center;
+  list-style: none;
+  padding-left: 35px;
+  background-position: 0 .2em;
+}
+
+.goto-details-Button{
+	height: 15%;
+	text-align: center;
+}

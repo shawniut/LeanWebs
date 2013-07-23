@@ -1,0 +1,2 @@
+module MidSizedCompanyPackHelper
+end
