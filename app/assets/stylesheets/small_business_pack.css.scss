@@ -121,7 +121,7 @@
 .leaf {
   //height: 25px;
   margin: 10px 0;
-  background: url('feature.png') no-repeat left center;
+  background: url(image_path('feature.png)) no-repeat left center;
   list-style: none;
   padding-left: 25px;
   background-position: 0 .2em;
