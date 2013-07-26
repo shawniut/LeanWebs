@@ -1,0 +1,33 @@
+// Place all the styles related to the graphics_design controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.graphics-pack-overview-container{
+	height: 450px;
+	margin-top:15px;
+	margin-left:20px;
+	margin-bottom:10px;
+	margin-right:20px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+}
+
+.graphics-pack-container{
+	float: left;
+	width:31%;
+	height: 430px;
+	border:1px solid #d2d2d2;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin:10px;
+}
+.graphics-feature-container{
+	height: 35%;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	padding-right:5px;
+	//border-bottom:1px solid #d2d2d2;
+}
+
+

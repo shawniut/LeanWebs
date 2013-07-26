@@ -1,4 +1,5 @@
 LeanWebs::Application.routes.draw do
+  get "logo_pack/index"
   get "e_commerce_pack/index"
   get "mid_sized_company_pack/index"
   get "growing_company_pack/index"
@@ -6,7 +7,7 @@ LeanWebs::Application.routes.draw do
   get "development_process/index"
   get "home/index"
 
-  resources  :small_business_pack, :development_process, :web_pack_overview
+  resources  :small_business_pack, :development_process, :web_pack_overview,:graphics_design
 
    root to: "home#index"
 

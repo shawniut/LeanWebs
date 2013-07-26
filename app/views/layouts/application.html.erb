@@ -44,7 +44,7 @@
           <li><a href="#">Directory and Blog Submission</a></li>
         </ul>
       <li>
-      <li>
+     <!-- <li>
         <a href="#">Sales and Marketing</a>
         <ul>
           <li><a href="#">Services Overview</a></li>
@@ -55,12 +55,13 @@
           <li><a href="#">Product Marketing and Uploading</a></li>
         </ul>
       <li>
+     -->   
         <a href="#">Graphics design</a>
         <ul>
-          <li><a href="#">Services Overview</a></li>
-          <li><a href="#">Logo & Banner design</a> <li>
-          <li><a href="#">Image editing</a></li>
-          <li><a href="#">PHD to HTML</a></li>
+           <li><%= link_to "Graphics Design Packages Overview",  :controller => "graphics_design" %></a></li> 
+          <li><a href="#">Logo Design Pack</a> <li>
+          <li><a href="#">Business Card Design Pack</a></li>
+          <li><a href="#">Banner and Poster Design Pack</a></li>
         </ul>
       </li>
       <li>
@@ -70,7 +71,7 @@
             <li><%= link_to "Small Business Pack",  :controller => "small_business_pack" %></li>
             <li><%= link_to "Mid-Sized Company Pack",  :controller => "mid_sized_company_pack" %></li>
             <li><%= link_to "Growing Company Pack",  :controller => "growing_company_pack" %></li>
-            <li><%= link_to "e-Commerce Pack",  :controller => "e_commerce_pack" %></li>
+            <li><%= link_to "E-Commerce Pack",  :controller => "e_commerce_pack" %></li>
             
           </ul>
       </li>

@@ -1,0 +1,2 @@
+module GraphicsDesign::LogoPackHelper
+end
