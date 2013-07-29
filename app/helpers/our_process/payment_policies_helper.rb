@@ -1,0 +1,2 @@
+module OurProcess::PaymentPoliciesHelper
+end

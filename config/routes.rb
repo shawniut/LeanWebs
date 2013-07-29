@@ -1,15 +1,29 @@
 LeanWebs::Application.routes.draw do
-  get "logo_pack/index"
-  get "e_commerce_pack/index"
-  get "mid_sized_company_pack/index"
-  get "growing_company_pack/index"
-  get "web_pack_overview/index"
-  get "development_process/index"
-  get "home/index"
+  #get "payment_policies/index"
+ 
 
-  resources  :small_business_pack, :development_process, :web_pack_overview,:graphics_design
+  
+  #resources :release_payment_policy, :only => [:index], :controller => 'release_payment_policy'
+#=begin
 
-   root to: "home#index"
+#=end
+#resources :release_payment_policy, module: 'our_process'  
+resources  :small_business_pack
+resources :development_process
+resources :web_pack_overview
+resources :graphics_design
+resources :growing_company_pack
+resources :mid_sized_company_pack
+resources :e_commerce_pack
+resources :logo_pack
+resources :home
+
+
+namespace :our_process do 
+        resources :payment_policies 
+end 
+
+root to: "home#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

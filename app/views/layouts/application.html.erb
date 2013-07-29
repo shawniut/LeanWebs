@@ -30,13 +30,14 @@
       <li>
         <a href="#">How it works?</a>
         <ul>
-          <li><%= link_to "Our Development Process",  :controller => "development_process" %></li>
+          <li><%= link_to "Our Development Process",development_process_index_path %></li>
+           <li><%= link_to "Our Release and Payment Policy",our_process_payment_policies_path %></li>
         </ul>
       </li>
       <li>
         <a href="#">SEO</a>
         <ul>
-          <li><a href="#">Services Overview</a></li>
+          <li><a href="/release_payment_policy">Services Overview</a></li>
           <li><a href="#">Keyword Research</a></li>
           <li><a href="#">Search Media Marketing(SEM)</a></li>
           <li><a href="#">Back Linking and Bookmarking</a></li>
@@ -58,8 +59,8 @@
      -->   
         <a href="#">Graphics design</a>
         <ul>
-           <li><%= link_to "Graphics Design Packages Overview",  :controller => "graphics_design" %></a></li> 
-          <li><a href="#">Logo Design Pack</a> <li>
+           <li><%= link_to "Graphics Design Packages Overview",  graphics_design_index_path %></a></li> 
+             <li><%= link_to "Logo Design Pack",  logo_pack_index_path%></a></li> 
           <li><a href="#">Business Card Design Pack</a></li>
           <li><a href="#">Banner and Poster Design Pack</a></li>
         </ul>
@@ -67,15 +68,15 @@
       <li>
         <a href="#">WEB SOLUTIONS</a>
           <ul>
-            <li><%= link_to "Web Packages Overview",  :controller => "web_pack_overview" %></a></li> 
-            <li><%= link_to "Small Business Pack",  :controller => "small_business_pack" %></li>
-            <li><%= link_to "Mid-Sized Company Pack",  :controller => "mid_sized_company_pack" %></li>
-            <li><%= link_to "Growing Company Pack",  :controller => "growing_company_pack" %></li>
-            <li><%= link_to "E-Commerce Pack",  :controller => "e_commerce_pack" %></li>
+            <li><%= link_to "Web Packages Overview",  web_pack_overview_index_path %></a></li> 
+            <li><%= link_to "Small Business Pack",  small_business_pack_index_path %></li>
+            <li><%= link_to "Mid-Sized Company Pack",  mid_sized_company_pack_index_path%></li>
+            <li><%= link_to "Growing Company Pack", growing_company_pack_index_path %></li>
+            <li><%= link_to "E-Commerce Pack",  e_commerce_pack_index_path %></li>
             
           </ul>
       </li>
-      <li><%= link_to "Home",  :controller => "home" %></a></li> 
+      <li><%= link_to "Home",  home_index_path %></a></li> 
     </ul>
 </div>
 <div id="body">
