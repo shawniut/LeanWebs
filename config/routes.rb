@@ -1,4 +1,5 @@
 LeanWebs::Application.routes.draw do
+ 
   #get "payment_policies/index"
  
 
@@ -8,19 +9,26 @@ LeanWebs::Application.routes.draw do
 
 #=end
 #resources :release_payment_policy, module: 'our_process'  
-resources  :small_business_pack
-resources :development_process
-resources :web_pack_overview
-resources :graphics_design
-resources :growing_company_pack
-resources :mid_sized_company_pack
-resources :e_commerce_pack
-resources :logo_pack
-resources :home
+resources  :small_business_pack, :only =>[:index]
+resources :development_process, :only =>[:index]
+resources :web_pack_overview, :only =>[:index]
+resources :graphics_design, :only =>[:index]
+resources :growing_company_pack, :only =>[:index]
+resources :mid_sized_company_pack, :only =>[:index]
+resources :e_commerce_pack, :only =>[:index]
+resources :logo_pack, :only =>[:index]
+resources :home, :only =>[:index]
 
 
 namespace :our_process do 
         resources :payment_policies 
+end
+
+namespace :graphics_design do 
+        resources :logo_pack, :only =>[:index]
+        resources :banner_postar_packs, :only =>[:index] 
+        resources :business_card_packs, :only =>[:index]  
+
 end 
 
 root to: "home#index"
